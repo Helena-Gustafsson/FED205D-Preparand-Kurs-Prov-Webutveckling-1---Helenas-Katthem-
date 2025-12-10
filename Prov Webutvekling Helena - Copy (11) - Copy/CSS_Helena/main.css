@@ -1,0 +1,205 @@
+/*KEEP ELEMENTS STRUCTURED IN SIZE*/
+* {
+  box-sizing: border-box;
+}
+
+
+/* HEADER */
+
+header {
+    display: block;
+    background-color: rgb(93, 93, 228);
+    border-radius: 15px;
+    border: 1px solid rgb(37, 37, 235);
+    padding: 2%;
+    height: auto;
+    box-shadow: 2px 2px 5px rgba(4,4,10,0.6);
+}
+
+h1{
+    text-align: center;
+    font-family:'Comic Sans MS';
+    font-size: 3em;
+    color: rgb(7, 7, 63);
+    text-shadow: 3px 3px 6px #9fd5e7;
+}
+
+/* NAVIGATION BAR */
+
+ul {
+ list-style: none;
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+ 
+}
+
+li {
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 1em;
+ color: rgb(7, 7, 63);
+ background-color: aqua;
+ border-radius: 15px;
+ box-shadow: 2px 2px 5px rgba(4,4,10,0.6);
+ text-shadow: 3px 3px 6px #9fd5e7;
+ padding: 10px;
+ height: 40px;
+ width: 200px;
+
+ display: flex;
+ justify-content: center;     
+ align-items: center;          
+}
+
+/* RESPONSIVE HEADER/NAVIGATION */
+
+/*Mobil (mobile first)*/
+@media screen and (max-width: 600px) {
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+header{
+    display: flex;
+    flex-direction: column;
+    padding:1%;
+}
+
+h1 {
+    font-size: 1.3em
+}
+}
+
+/* ASIDE & MAIN - Text*/
+
+h3{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 1.1em;
+ color: rgb(7, 7, 63);  
+ text-shadow: 3px 3px 6px #9fd5e7; 
+}
+
+p{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 0.85em;
+ color: rgb(7, 7, 63);     
+}
+
+/* LAYOUT MAIN/ASIDE WRAPPER (mobile first)*/
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;}
+
+aside {
+    width: 100%;
+    background-color: rgb(145, 152, 238);
+    margin: auto;
+    height: auto;
+    border-radius: 15px;
+    display: flex;           
+    flex: 1;
+    margin: auto;
+    height: auto;
+    border-radius: 15px;
+    display: flex;           
+    flex-direction: column;  
+    align-items: flex-start;  
+    gap: 5px;                
+    padding: 25px;
+    box-shadow: 2px 2px 5px rgba(4,4,10,0.6);
+}
+
+main{
+    width: 100%; 
+    background-color: rgb(145, 152, 238);
+    margin: auto;
+    height: auto;
+    border-radius: 15px;
+   
+    display: flex;                   
+    flex-wrap: wrap;
+    flex-direction: column;           
+    justify-content: center;
+    gap: 10px;                        
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(4,4,10,0.6);
+}
+
+/*KATTRUTOR*/
+
+.kattruta {
+  background-color: whitesmoke;
+  border-radius: 15px;
+  padding: 15px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(4,4,10,0.6);
+}
+
+.kattruta img {
+  display: block;
+  width: 90%;         
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px rgba(4,4,10,0.6);
+}
+/*Regel för större skärmar*/
+
+@media screen and (min-width: 601px){
+    #wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        margin-top: 0;  
+    }
+
+    aside {
+        flex: 1;
+        height: 700px; 
+        border-radius: 15px;
+        padding: 15px;
+        gap: 2px; 
+
+        display: flex;           
+        flex-direction: column;  
+        align-items: flex-start;                       
+    }
+
+    main {
+        flex: 5;
+        height: 700px;
+        border-radius: 15px;
+        padding: 15px;
+        gap: 2px; 
+
+        display: flex;       
+        flex-direction: row;
+        flex-wrap: wrap;               
+        justify-content: space-evenly;
+        min-width: 4cm;
+    }  
+  
+    .kattruta {
+        width: 22%;
+        height: auto;
+        margin: 0.5%;
+        min-width: 4cm;
+    }  
+}
+
+/* FOOTER */
+    footer{
+        background-color: rgb(93, 93, 228);
+        border-radius: 15px;
+        color: aliceblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px;
+    }
