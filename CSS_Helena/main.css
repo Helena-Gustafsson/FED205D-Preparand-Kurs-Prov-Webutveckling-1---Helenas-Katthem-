@@ -163,7 +163,6 @@ main{
 
     aside {
         flex: 1;
-        height: 700px; 
         border-radius: 15px;
         padding: 15px;
         gap: 2px; 
@@ -175,7 +174,6 @@ main{
 
     main {
         flex: 5;
-        height: 700px;
         border-radius: 15px;
         padding: 15px;
         gap: 2px; 
